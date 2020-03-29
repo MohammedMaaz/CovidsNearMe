@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "502137635328",
+    "firebase_url": "https://covid-19-paki.firebaseio.com",
+    "project_id": "covid-19-paki",
+    "storage_bucket": "covid-19-paki.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502137635328:android:d87fe337862c5e200c4ee5",
+        "android_client_info": {
+          "package_name": "com.covidsnearme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502137635328-lm743t60hpc30q3iv860om9l8ra7enua.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.covidsnearme",
+            "certificate_hash": "20d36db940043ed7f0d97fc6ffad0c679cac9232"
+          }
+        },
+        {
+          "client_id": "502137635328-ldp07l4ddgrtdusvpkf3uaulte1lelqd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDzs8lRYSYPsWTV-TZNQBAI4cq_7aB-Lk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502137635328-ldp07l4ddgrtdusvpkf3uaulte1lelqd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
