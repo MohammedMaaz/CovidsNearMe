@@ -22,4 +22,4 @@ export const db = {
 };
 
 export const firebase = FB;
-export const c_user = () => FB.auth().currentUser.uid;
+export const c_user = () => FB.auth().currentUser;

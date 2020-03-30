@@ -11,6 +11,12 @@ export const random_numeric_string = digits => {
   return (Math.floor(Math.random() * offset) + offset).toString().substring(1);
 };
 
+export const remove_key = (obj, key) => {
+  let newObj = {...obj};
+  delete newObj[key];
+  return newObj;
+};
+
 export const gen_hash_string = len => {
   return 'x'.repeat(len).replace(/[xy]/g, c => {
     let r = (Math.random() * 16) | 0,

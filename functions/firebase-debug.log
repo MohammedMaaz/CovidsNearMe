@@ -1,0 +1,22 @@
+[debug] [2020-03-30T06:13:21.948Z] ----------------------------------------------------------------------
+[debug] [2020-03-30T06:13:21.951Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\maazp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2020-03-30T06:13:21.951Z] CLI Version:   7.12.1
+[debug] [2020-03-30T06:13:21.951Z] Platform:      win32
+[debug] [2020-03-30T06:13:21.951Z] Node Version:  v10.15.3
+[debug] [2020-03-30T06:13:21.953Z] Time:          Mon Mar 30 2020 11:13:21 GMT+0500 (Pakistan Standard Time)
+[debug] [2020-03-30T06:13:21.953Z] ----------------------------------------------------------------------
+[debug] [2020-03-30T06:13:21.953Z] 
+[debug] [2020-03-30T06:13:21.964Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-30T06:13:21.965Z] > authorizing via signed-in user
+[debug] [2020-03-30T06:13:21.965Z] [iam] checking project covid-19-paki for permissions ["firebase.projects.get"]
+[debug] [2020-03-30T06:13:21.968Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/covid-19-paki:testIamPermissions  
+
+[debug] [2020-03-30T06:13:23.624Z] <<< HTTP RESPONSE 200
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[info] +  functions: Emulator started at http://localhost:5000
+[debug] [2020-03-30T06:13:25.151Z] [functions] Watching "C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions" for Cloud Functions...
+[debug] [2020-03-30T06:13:25.171Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-30T06:13:25.171Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-30T06:13:25.171Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-30T06:13:25.172Z] DEBUG: [worker-~diagnostic~-b77e15da-b563-4558-afc2-f985dc85523e]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\14872
+[debug] [2020-03-30T06:13:25.172Z] DEBUG: [worker-~diagnostic~-b77e15da-b563-4558-afc2-f985dc85523e]: BUSY

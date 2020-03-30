@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet} from 'react-native';
-import {theme} from '../../config/styles';
+import {theme, Styles} from '../../config/styles';
 
 const Splash = props => {
   return (
-    <View style={{flex: 1}}>
-      <Text>
+    <View style={styles.container}>
+      <Text style={Styles.title}>
         Covids <Text style={{color: theme.colors.primary}}>Near Me</Text>
       </Text>
     </View>
@@ -14,16 +14,8 @@ const Splash = props => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: theme.colors.primaryLight,
-    alignItems: 'center',
+    ...Styles.container,
     justifyContent: 'center',
-  },
-  title: {
-    fontSize: theme.font.title,
-    color: theme.colors.secondary,
-    textAlign: 'center',
-    fontWeight: 'bold',
   },
 });
 

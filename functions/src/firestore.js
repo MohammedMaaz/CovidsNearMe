@@ -3,21 +3,22 @@ import getKey from 'lodash.get';
 const get = async docRef => {
   try {
     const doc = await docRef.get();
-    if (!doc.exists) throw 'doc does not exist';
+    if (!doc.exists) return null;
 
-    return Promise.resolve({id: doc.id, ...doc.data()});
+    return {id: doc.id, ...doc.data()};
   } catch (e) {
-    return Promise.reject(e);
+    throw e;
   }
 };
 
 const get_value = async (docRef, key, fallback) => {
   try {
     const doc = await get(docRef);
-    return Promise.resolve(getKey(doc, key, fallback));
+    if (!doc) throw 'doc does not exist';
+    return getKey(doc, key, fallback);
   } catch (e) {
-    if (fallback) return Promise.resolve(fallback);
-    return Promise.reject(e);
+    if (fallback) return fallback;
+    throw e;
   }
 };
 

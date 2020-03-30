@@ -38,15 +38,15 @@
       <uses-library android:name="org.apache.http.legacy" android:required="false"/>
 
       <service
-            android:name="com.rnheartbeat.HeartbeartService"
+            android:name="com.covidsnearme.HeartbeartService"
             android:enabled="true"
             android:exported="false" >
         </service>
         <service
-            android:name="com.rnheartbeat.HeartbeatEventService">
+            android:name="com.covidsnearme.HeartbeatEventService">
         </service>
         <receiver
-            android:name="com.rnheartbeat.BootUpReceiver"
+            android:name="com.covidsnearme.BootUpReceiver"
             android:enabled="true"
             android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
             <intent-filter>

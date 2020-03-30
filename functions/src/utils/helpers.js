@@ -2,6 +2,35 @@ import Geo from './geolocation';
 import {random_number, random_int, snapMillisToTrailing} from './utils';
 import {db} from './firebase';
 
+export const generateRandLogs = ({
+  cLat,
+  cLng,
+  radius,
+  minAlt,
+  maxAlt,
+  hours,
+  intervalSecs,
+  startTime = Date.now(),
+}) => {
+  const [minLat, minLng, maxLat, maxLng] = Geo.get_circle_box(
+    cLat,
+    cLng,
+    radius,
+  );
+
+  let logs = [];
+  const minTime = startTime - hours * 60 * 60 * 1000;
+  for (let i = 0; i < hours * 3600; i += intervalSecs)
+    logs.push({
+      lat: random_number(minLat, maxLat),
+      lng: random_number(minLng, maxLng),
+      alt: random_number(minAlt, maxAlt),
+      timestamp: minTime + i * 1000,
+    });
+
+  return logs;
+};
+
 const genrateRandLogDocs = ({cLat, cLng, meters, days, intervalSecs}) => {
   const [minLat, minLng, maxLat, maxLng] = Geo.get_circle_box(
     cLat,
@@ -113,8 +142,8 @@ export const getLogs = async ({minMillis, maxMillis, snapMillis, uid}) => {
 
     const docs = await db
       .locationLogs(uid)
-      .where('timeRange.min', '>=', t1)
-      .where('timeRange.min', '<=', t2)
+      .where('timeRange.min', '>=', new Date(t1))
+      .where('timeRange.min', '<=', new Date(t2))
       .get();
 
     const logs = [];
@@ -137,3 +166,19 @@ export const changeTaskStatus = (uid, taskId, newStatus) =>
       },
       {merge: true},
     );
+
+export const getUnfilledLog = async (t1, t2, uid) => {
+  try {
+    const docs = await db
+      .locationLogs(uid)
+      .where('timeRange.max', '>=', t1)
+      .get();
+
+    const logs = [];
+    docs.forEach(doc => logs.push({id: doc.id, ...doc.data()}));
+
+    return logs.filter(log => log.timeRange.min <= t2)[0];
+  } catch (error) {
+    throw error;
+  }
+};

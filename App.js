@@ -4,6 +4,7 @@ import {createMemoryHistory} from 'history';
 import {Provider} from '@ant-design/react-native';
 import {globalErrorHandler} from './src/utils/errorHandler';
 import Router from './src/config/Router';
+import LoggingService from './src/services/logging';
 
 const dvaInit = props => {
   const app = dva({
@@ -30,6 +31,11 @@ class App extends Component {
     super();
     DvaApp = dvaInit();
   }
+
+  componentDidMount() {
+    //LoggingService.stop();
+  }
+
   render() {
     return <DvaApp />;
   }

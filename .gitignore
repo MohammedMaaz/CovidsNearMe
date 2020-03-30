@@ -57,3 +57,6 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+#security keys
+/covid-19-paki-6eba73e0b754.json

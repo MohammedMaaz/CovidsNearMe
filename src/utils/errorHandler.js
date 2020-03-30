@@ -13,8 +13,8 @@ export const globalErrorHandler = (e, dispatch) => {
   if (e.error) error = e.error;
   console.log(error);
 
-  if (error.message) Toast.show(error.message, 3000);
-  else Toast.show('An error occurred!', 2000);
+  if (error.message) Toast.show(error.message, 5);
+  else Toast.fail('An error occurred!', 3);
 
   if (e.stopLoading) dispatch(loadingStopped(e.stopLoading));
 };

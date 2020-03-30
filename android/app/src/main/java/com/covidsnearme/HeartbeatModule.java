@@ -1,4 +1,4 @@
-package com.rnheartbeat;
+package com.covidsnearme;
 
 import android.content.Intent;
 

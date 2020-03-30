@@ -50,5 +50,14 @@ export default aggregateHashMap = functions.firestore
       ]);
     } catch (e) {
       console.log('aggregateHashMap ERROR:', e);
+      try {
+        await changeTaskStatus(
+          context.params.uid,
+          'aggregateHashMap',
+          'failed',
+        );
+      } catch (error) {
+        console.log('changeTaskStatus ERROR:', error);
+      }
     }
   });

@@ -26,7 +26,7 @@ export default {
 
         yield put({
           type: 'setState',
-          payload: {confirmResult, phoneNumber},
+          payload: {confirmResult, phoneNumber, loading: false},
         });
 
         Actions.replace('VerifyCode');
@@ -77,10 +77,11 @@ export default {
       return Auth.subscribe(user => {
         if (user) {
           //if logged in
-          dispatch({type: 'setState', payload: {user}});
+          dispatch({type: 'setState', payload: {user, loading: false}});
+          Actions.reset('CovidsTracking');
         } else {
           //if logged out
-          dispatch({type: 'setState', payload: {user: null}});
+          dispatch({type: 'setState', payload: {user: null, loading: false}});
           Actions.reset('Login');
         }
       });

@@ -1,5 +1,4 @@
-package com.rnheartbeat;
-
+package com.covidsnearme;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
@@ -15,7 +14,7 @@ public class HeartbeatEventService extends HeadlessJsTaskService {
         return new HeadlessJsTaskConfig(
                 "Heartbeat",
                 extras != null ? Arguments.fromBundle(extras) : Arguments.createMap(),
-                5000,
+                15000,
                 true);
     }
 }

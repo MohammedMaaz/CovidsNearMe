@@ -2,7 +2,7 @@ import * as admin from 'firebase-admin';
 import * as funcs from 'firebase-functions';
 
 //db refs
-const _db = FB.firestore();
+const _db = admin.firestore();
 const users = _db.collection('users');
 const alerts = uid => users.doc(uid).collection('alerts');
 const locationLogs = uid => users.doc(uid).collection('locationLogs');

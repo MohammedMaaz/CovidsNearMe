@@ -1,5 +1,4 @@
 package com.covidsnearme;
-
 import android.app.Notification;
 import android.app.PendingIntent;
 import android.app.Service;
@@ -17,7 +16,7 @@ import com.facebook.react.HeadlessJsTaskService;
 public class HeartbeartService extends Service {
 
     private static final int SERVICE_NOTIFICATION_ID = 12345;
-    private static final String CHANNEL_ID = "HEARTBEAT";
+    private static final String CHANNEL_ID = "COVID_TRACK";
 
     private Handler handler = new Handler();
     private Runnable runnableCode = new Runnable() {
@@ -27,7 +26,7 @@ public class HeartbeartService extends Service {
             Intent myIntent = new Intent(context, HeartbeatEventService.class);
             context.startService(myIntent);
             HeadlessJsTaskService.acquireWakeLockNow(context);
-            handler.postDelayed(this, 2000);
+            handler.postDelayed(this, 5000);
         }
     };
     private void createNotificationChannel() {
@@ -35,8 +34,8 @@ public class HeartbeartService extends Service {
         // the NotificationChannel class is new and not in the support library
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             int importance = NotificationManager.IMPORTANCE_DEFAULT;
-            NotificationChannel channel = new NotificationChannel(CHANNEL_ID, "HEARTBEAT", importance);
-            channel.setDescription("CHANEL DESCRIPTION");
+            NotificationChannel channel = new NotificationChannel(CHANNEL_ID, "COVID_TRACK", importance);
+            channel.setDescription("Tracking covid patients");
             NotificationManager notificationManager = getSystemService(NotificationManager.class);
             notificationManager.createNotificationChannel(channel);
         }
@@ -66,8 +65,8 @@ public class HeartbeartService extends Service {
         Intent notificationIntent = new Intent(this, MainActivity.class);
         PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent, PendingIntent.FLAG_CANCEL_CURRENT);
         Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
-                .setContentTitle("Heartbeat service")
-                .setContentText("Running...")
+                .setContentTitle("Covids Near Me")
+                .setContentText("Protecting you...")
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setContentIntent(contentIntent)
                 .setOngoing(true)
