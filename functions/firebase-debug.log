@@ -20,3 +20,691 @@
 [debug] [2020-03-30T06:13:25.171Z] DEBUG: [worker-pool] submitWork(triggerId=)
 [debug] [2020-03-30T06:13:25.172Z] DEBUG: [worker-~diagnostic~-b77e15da-b563-4558-afc2-f985dc85523e]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\14872
 [debug] [2020-03-30T06:13:25.172Z] DEBUG: [worker-~diagnostic~-b77e15da-b563-4558-afc2-f985dc85523e]: BUSY
+[debug] [2020-03-30T06:13:25.785Z] DEBUG: [runtime-status] [14872] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T06:13:25.787Z] DEBUG: [runtime-status] [14872] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T06:13:25.790Z] DEBUG: [runtime-status] [14872] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T06:13:25.793Z] DEBUG: [runtime-status] [14872] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T06:13:25.795Z] DEBUG: [runtime-status] [14872] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T06:13:26.396Z] [functions[logsEntry]] http function initialized (http://localhost:5000/covid-19-paki/us-central1/logsEntry).
+[info] i  functions: Loaded functions: logsEntry
+[debug] [2020-03-30T06:13:26.408Z] DEBUG: [worker-~diagnostic~-b77e15da-b563-4558-afc2-f985dc85523e]: IDLE
+[debug] [2020-03-30T06:13:49.883Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-30T06:13:49.884Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-30T06:13:49.885Z] Accepted request POST /covid-19-paki/us-central1/logsEntry --> logsEntry
+[debug] [2020-03-30T06:13:49.896Z] DEBUG: [worker-pool] addWorker(logsEntry)
+[debug] [2020-03-30T06:13:49.896Z] DEBUG: [worker-pool] Adding worker with key logsEntry, total=1
+[debug] [2020-03-30T06:13:49.896Z] DEBUG: [worker-pool] submitWork(triggerId=logsEntry)
+[debug] [2020-03-30T06:13:49.896Z] DEBUG: [worker-logsEntry-604f29f4-36fa-4a05-9068-a3fe77a670cb]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\8968
+[debug] [2020-03-30T06:13:49.896Z] DEBUG: [worker-logsEntry-604f29f4-36fa-4a05-9068-a3fe77a670cb]: BUSY
+[debug] [2020-03-30T06:13:50.502Z] DEBUG: [runtime-status] [8968] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T06:13:50.505Z] DEBUG: [runtime-status] [8968] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T06:13:50.509Z] DEBUG: [runtime-status] [8968] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T06:13:50.510Z] DEBUG: [runtime-status] [8968] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T06:13:50.513Z] DEBUG: [runtime-status] [8968] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T06:13:51.135Z] DEBUG: [runtime-status] [8968] Trigger "logsEntry" has been found, beginning invocation!
+[debug] [2020-03-30T06:13:51.136Z] [functions] Beginning execution of "logsEntry"
+[debug] [2020-03-30T06:13:51.136Z] DEBUG: [runtime-status] [8968] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"logsEntry","entryPoint":"logsEntry"}
+[debug] [2020-03-30T06:13:51.136Z] DEBUG: [runtime-status] [8968] Running logsEntry in mode HTTPS
+[debug] [2020-03-30T06:13:51.141Z] DEBUG: [runtime-status] [8968] Attempting to listen to socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\8968
+[debug] [2020-03-30T06:13:51.146Z] DEBUG: [functions] Runtime ready! Sending request!
+[debug] [2020-03-30T06:13:51.348Z] DEBUG: [runtime-status] [8968] Ephemeral server handling POST request
+[info] >  logsEntry ERROR: TypeError: Cannot read property '0' of undefined
+[info] >      at logsEntry (C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\logsEntry.js:48:24)
+[info] >      at func (C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\node_modules\firebase-functions\lib\providers\https.js:267:32)
+[info] >      at corsHandler (C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\node_modules\firebase-functions\lib\providers\https.js:287:44)
+[info] >      at cors (C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\node_modules\cors\lib\index.js:188:7)
+[info] >      at C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\node_modules\cors\lib\index.js:224:17
+[info] >      at originCallback (C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\node_modules\cors\lib\index.js:214:15)
+[info] >      at C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\node_modules\cors\lib\index.js:219:13
+[info] >      at optionsCallback (C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\node_modules\cors\lib\index.js:199:9)
+[info] >      at corsMiddleware (C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\node_modules\cors\lib\index.js:204:7)
+[info] >      at corsFunc (C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\node_modules\firebase-functions\lib\providers\https.js:287:16)
+[debug] [2020-03-30T06:13:51.372Z] DEBUG: [runtime-status] [8968] Ephemeral server survived.
+[debug] [2020-03-30T06:13:51.375Z] [functions] Finished "logsEntry" in ~1s
+[debug] [2020-03-30T06:13:51.376Z] DEBUG: [worker-logsEntry-604f29f4-36fa-4a05-9068-a3fe77a670cb]: IDLE
+[debug] [2020-03-30T06:13:51.376Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-30T06:14:25.153Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\src\logsEntry.ts changed, reloading triggers
+[debug] [2020-03-30T06:14:25.899Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\logsEntry.js changed, reloading triggers
+[debug] [2020-03-30T06:14:26.900Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-30T06:14:26.900Z] DEBUG: [worker-~diagnostic~-b77e15da-b563-4558-afc2-f985dc85523e]: FINISHING
+[debug] [2020-03-30T06:14:26.901Z] DEBUG: [worker-pool] Shutting down IDLE worker (logsEntry)
+[debug] [2020-03-30T06:14:26.902Z] DEBUG: [worker-logsEntry-604f29f4-36fa-4a05-9068-a3fe77a670cb]: FINISHING
+[debug] [2020-03-30T06:14:26.933Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-30T06:14:26.933Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-30T06:14:26.933Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-30T06:14:26.934Z] DEBUG: [worker-~diagnostic~-d98875f9-83a4-49b9-9189-827371d53dd0]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\16692
+[debug] [2020-03-30T06:14:26.934Z] DEBUG: [worker-~diagnostic~-d98875f9-83a4-49b9-9189-827371d53dd0]: BUSY
+[debug] [2020-03-30T06:14:26.935Z] DEBUG: [worker-~diagnostic~-b77e15da-b563-4558-afc2-f985dc85523e]: exited
+[debug] [2020-03-30T06:14:26.936Z] DEBUG: [worker-~diagnostic~-b77e15da-b563-4558-afc2-f985dc85523e]: FINISHED
+[debug] [2020-03-30T06:14:26.945Z] DEBUG: [worker-logsEntry-604f29f4-36fa-4a05-9068-a3fe77a670cb]: exited
+[debug] [2020-03-30T06:14:26.946Z] DEBUG: [worker-logsEntry-604f29f4-36fa-4a05-9068-a3fe77a670cb]: FINISHED
+[debug] [2020-03-30T06:14:28.001Z] DEBUG: [runtime-status] [16692] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T06:14:28.006Z] DEBUG: [runtime-status] [16692] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T06:14:28.010Z] DEBUG: [runtime-status] [16692] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T06:14:28.012Z] DEBUG: [runtime-status] [16692] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T06:14:28.013Z] DEBUG: [runtime-status] [16692] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T06:14:28.700Z] DEBUG: [worker-~diagnostic~-d98875f9-83a4-49b9-9189-827371d53dd0]: IDLE
+[debug] [2020-03-30T06:14:36.731Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-30T06:14:36.731Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-30T06:14:36.731Z] Accepted request POST /covid-19-paki/us-central1/logsEntry --> logsEntry
+[debug] [2020-03-30T06:14:36.731Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-30T06:14:36.731Z] DEBUG: [worker-pool] Cleaned up workers for logsEntry: 1 --> 0
+[debug] [2020-03-30T06:14:36.739Z] DEBUG: [worker-pool] addWorker(logsEntry)
+[debug] [2020-03-30T06:14:36.739Z] DEBUG: [worker-pool] Adding worker with key logsEntry, total=1
+[debug] [2020-03-30T06:14:36.739Z] DEBUG: [worker-pool] submitWork(triggerId=logsEntry)
+[debug] [2020-03-30T06:14:36.739Z] DEBUG: [worker-logsEntry-6c10fea4-786d-4edc-aad8-b173750570e4]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\19184
+[debug] [2020-03-30T06:14:36.740Z] DEBUG: [worker-logsEntry-6c10fea4-786d-4edc-aad8-b173750570e4]: BUSY
+[debug] [2020-03-30T06:14:37.331Z] DEBUG: [runtime-status] [19184] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T06:14:37.333Z] DEBUG: [runtime-status] [19184] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T06:14:37.338Z] DEBUG: [runtime-status] [19184] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T06:14:37.340Z] DEBUG: [runtime-status] [19184] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T06:14:37.342Z] DEBUG: [runtime-status] [19184] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T06:14:38.030Z] DEBUG: [runtime-status] [19184] Trigger "logsEntry" has been found, beginning invocation!
+[debug] [2020-03-30T06:14:38.030Z] [functions] Beginning execution of "logsEntry"
+[debug] [2020-03-30T06:14:38.030Z] DEBUG: [runtime-status] [19184] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"logsEntry","entryPoint":"logsEntry"}
+[debug] [2020-03-30T06:14:38.031Z] DEBUG: [runtime-status] [19184] Running logsEntry in mode HTTPS
+[debug] [2020-03-30T06:14:38.038Z] DEBUG: [runtime-status] [19184] Attempting to listen to socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\19184
+[debug] [2020-03-30T06:14:38.043Z] DEBUG: [functions] Runtime ready! Sending request!
+[debug] [2020-03-30T06:14:38.072Z] DEBUG: [runtime-status] [19184] Ephemeral server handling POST request
+[debug] [2020-03-30T06:14:38.112Z] DEBUG: [runtime-status] [19184] Ephemeral server survived.
+[info] >  logsEntry ERROR: { Error: 3 INVALID_ARGUMENT: Cannot have inequality filters on multiple properties: [timeRange.max, timeRange.min]
+[info] >      at callErrorFromStatus (C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\node_modules\@grpc\grpc-js\build\src\call.js:30:26)
+[info] >      at Http2CallStream.call.on (C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\node_modules\@grpc\grpc-js\build\src\call.js:79:34)
+[info] >      at Http2CallStream.emit (events.js:194:15)
+[info] >      at process.nextTick (C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\node_modules\@grpc\grpc-js\build\src\call-stream.js:100:22)
+[info] >      at process._tickCallback (internal/process/next_tick.js:61:11)
+[info] >    code: 3,
+[info] >    details:
+[info] >     'Cannot have inequality filters on multiple properties: [timeRange.max, timeRange.min]',
+[info] >    metadata: Metadata { internalRepr: Map {}, options: {} } }
+[debug] [2020-03-30T06:14:39.767Z] [functions] Finished "logsEntry" in ~1s
+[debug] [2020-03-30T06:14:39.768Z] DEBUG: [worker-logsEntry-6c10fea4-786d-4edc-aad8-b173750570e4]: IDLE
+[debug] [2020-03-30T06:14:39.768Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-30T06:17:48.709Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\src\utils\helpers.js changed, reloading triggers
+[debug] [2020-03-30T06:17:49.507Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\utils\helpers.js changed, reloading triggers
+[debug] [2020-03-30T06:17:49.517Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\logsEntry.js changed, reloading triggers
+[debug] [2020-03-30T06:17:49.524Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\aggregateHashMap.js changed, reloading triggers
+[debug] [2020-03-30T06:17:50.524Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-30T06:17:50.548Z] DEBUG: [worker-~diagnostic~-d98875f9-83a4-49b9-9189-827371d53dd0]: FINISHING
+[debug] [2020-03-30T06:17:50.549Z] DEBUG: [worker-pool] Shutting down IDLE worker (logsEntry)
+[debug] [2020-03-30T06:17:50.551Z] DEBUG: [worker-logsEntry-6c10fea4-786d-4edc-aad8-b173750570e4]: FINISHING
+[debug] [2020-03-30T06:17:50.564Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-30T06:17:50.564Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-30T06:17:50.564Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-30T06:17:50.565Z] DEBUG: [worker-~diagnostic~-78e566ff-9287-442b-aa09-25ced7bc35f0]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\14628
+[debug] [2020-03-30T06:17:50.565Z] DEBUG: [worker-~diagnostic~-78e566ff-9287-442b-aa09-25ced7bc35f0]: BUSY
+[debug] [2020-03-30T06:17:50.573Z] DEBUG: [worker-logsEntry-6c10fea4-786d-4edc-aad8-b173750570e4]: exited
+[debug] [2020-03-30T06:17:50.574Z] DEBUG: [worker-logsEntry-6c10fea4-786d-4edc-aad8-b173750570e4]: FINISHED
+[debug] [2020-03-30T06:17:50.574Z] DEBUG: [worker-~diagnostic~-d98875f9-83a4-49b9-9189-827371d53dd0]: exited
+[debug] [2020-03-30T06:17:50.574Z] DEBUG: [worker-~diagnostic~-d98875f9-83a4-49b9-9189-827371d53dd0]: FINISHED
+[debug] [2020-03-30T06:17:51.805Z] DEBUG: [runtime-status] [14628] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T06:17:51.808Z] DEBUG: [runtime-status] [14628] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T06:17:51.812Z] DEBUG: [runtime-status] [14628] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T06:17:51.814Z] DEBUG: [runtime-status] [14628] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T06:17:51.816Z] DEBUG: [runtime-status] [14628] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T06:17:52.629Z] DEBUG: [worker-~diagnostic~-78e566ff-9287-442b-aa09-25ced7bc35f0]: IDLE
+[debug] [2020-03-30T06:23:25.088Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\src\utils\helpers.js changed, reloading triggers
+[debug] [2020-03-30T06:23:25.946Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\utils\helpers.js changed, reloading triggers
+[debug] [2020-03-30T06:23:25.964Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\logsEntry.js changed, reloading triggers
+[debug] [2020-03-30T06:23:25.971Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\aggregateHashMap.js changed, reloading triggers
+[debug] [2020-03-30T06:23:26.971Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-30T06:23:26.972Z] DEBUG: [worker-~diagnostic~-78e566ff-9287-442b-aa09-25ced7bc35f0]: FINISHING
+[debug] [2020-03-30T06:23:26.972Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-30T06:23:26.973Z] DEBUG: [worker-pool] Cleaned up workers for logsEntry: 1 --> 0
+[debug] [2020-03-30T06:23:26.994Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-30T06:23:26.994Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-30T06:23:26.994Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-30T06:23:26.994Z] DEBUG: [worker-~diagnostic~-dff3f1fb-057d-4465-b05e-cdc63b951b36]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\17444
+[debug] [2020-03-30T06:23:26.994Z] DEBUG: [worker-~diagnostic~-dff3f1fb-057d-4465-b05e-cdc63b951b36]: BUSY
+[debug] [2020-03-30T06:23:27.006Z] DEBUG: [worker-~diagnostic~-78e566ff-9287-442b-aa09-25ced7bc35f0]: exited
+[debug] [2020-03-30T06:23:27.006Z] DEBUG: [worker-~diagnostic~-78e566ff-9287-442b-aa09-25ced7bc35f0]: FINISHED
+[debug] [2020-03-30T06:23:28.137Z] DEBUG: [runtime-status] [17444] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T06:23:28.142Z] DEBUG: [runtime-status] [17444] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T06:23:28.149Z] DEBUG: [runtime-status] [17444] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T06:23:28.153Z] DEBUG: [runtime-status] [17444] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T06:23:28.156Z] DEBUG: [runtime-status] [17444] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T06:23:28.986Z] DEBUG: [worker-~diagnostic~-dff3f1fb-057d-4465-b05e-cdc63b951b36]: IDLE
+[debug] [2020-03-30T06:23:57.483Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\src\utils\helpers.js changed, reloading triggers
+[debug] [2020-03-30T06:23:58.485Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-30T06:23:58.485Z] DEBUG: [worker-~diagnostic~-dff3f1fb-057d-4465-b05e-cdc63b951b36]: FINISHING
+[debug] [2020-03-30T06:23:58.485Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-30T06:23:58.502Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-30T06:23:58.503Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-30T06:23:58.503Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-30T06:23:58.503Z] DEBUG: [worker-~diagnostic~-fe64f92c-d387-4591-bf45-13d03911ddf8]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\15212
+[debug] [2020-03-30T06:23:58.503Z] DEBUG: [worker-~diagnostic~-fe64f92c-d387-4591-bf45-13d03911ddf8]: BUSY
+[debug] [2020-03-30T06:23:58.511Z] DEBUG: [worker-~diagnostic~-dff3f1fb-057d-4465-b05e-cdc63b951b36]: exited
+[debug] [2020-03-30T06:23:58.511Z] DEBUG: [worker-~diagnostic~-dff3f1fb-057d-4465-b05e-cdc63b951b36]: FINISHED
+[debug] [2020-03-30T06:23:59.586Z] DEBUG: [runtime-status] [15212] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T06:23:59.589Z] DEBUG: [runtime-status] [15212] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T06:23:59.594Z] DEBUG: [runtime-status] [15212] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T06:23:59.597Z] DEBUG: [runtime-status] [15212] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T06:23:59.599Z] DEBUG: [runtime-status] [15212] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T06:24:00.457Z] DEBUG: [worker-~diagnostic~-fe64f92c-d387-4591-bf45-13d03911ddf8]: IDLE
+[debug] [2020-03-30T06:26:26.980Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\src\logsEntry.ts changed, reloading triggers
+[debug] [2020-03-30T06:26:27.747Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\logsEntry.js changed, reloading triggers
+[debug] [2020-03-30T06:26:28.749Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-30T06:26:28.749Z] DEBUG: [worker-~diagnostic~-fe64f92c-d387-4591-bf45-13d03911ddf8]: FINISHING
+[debug] [2020-03-30T06:26:28.750Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-30T06:26:28.768Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-30T06:26:28.768Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-30T06:26:28.768Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-30T06:26:28.768Z] DEBUG: [worker-~diagnostic~-930d4631-c141-4fc9-ae77-965403d4839a]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\9676
+[debug] [2020-03-30T06:26:28.768Z] DEBUG: [worker-~diagnostic~-930d4631-c141-4fc9-ae77-965403d4839a]: BUSY
+[debug] [2020-03-30T06:26:28.801Z] DEBUG: [worker-~diagnostic~-fe64f92c-d387-4591-bf45-13d03911ddf8]: exited
+[debug] [2020-03-30T06:26:28.801Z] DEBUG: [worker-~diagnostic~-fe64f92c-d387-4591-bf45-13d03911ddf8]: FINISHED
+[debug] [2020-03-30T06:26:29.993Z] DEBUG: [runtime-status] [9676] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T06:26:29.997Z] DEBUG: [runtime-status] [9676] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T06:26:30.004Z] DEBUG: [runtime-status] [9676] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T06:26:30.007Z] DEBUG: [runtime-status] [9676] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T06:26:30.009Z] DEBUG: [runtime-status] [9676] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T06:26:30.976Z] DEBUG: [worker-~diagnostic~-930d4631-c141-4fc9-ae77-965403d4839a]: IDLE
+[debug] [2020-03-30T06:26:43.150Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-30T06:26:43.150Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-30T06:26:43.150Z] Accepted request POST /covid-19-paki/us-central1/logsEntry --> logsEntry
+[debug] [2020-03-30T06:26:43.150Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-30T06:26:43.159Z] DEBUG: [worker-pool] addWorker(logsEntry)
+[debug] [2020-03-30T06:26:43.160Z] DEBUG: [worker-pool] Adding worker with key logsEntry, total=1
+[debug] [2020-03-30T06:26:43.160Z] DEBUG: [worker-pool] submitWork(triggerId=logsEntry)
+[debug] [2020-03-30T06:26:43.160Z] DEBUG: [worker-logsEntry-051ce51b-b71f-4a7e-9f25-ba1d18e21b71]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\9440
+[debug] [2020-03-30T06:26:43.160Z] DEBUG: [worker-logsEntry-051ce51b-b71f-4a7e-9f25-ba1d18e21b71]: BUSY
+[debug] [2020-03-30T06:26:43.863Z] DEBUG: [runtime-status] [9440] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T06:26:43.866Z] DEBUG: [runtime-status] [9440] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T06:26:43.871Z] DEBUG: [runtime-status] [9440] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T06:26:43.873Z] DEBUG: [runtime-status] [9440] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T06:26:43.876Z] DEBUG: [runtime-status] [9440] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T06:26:44.477Z] DEBUG: [runtime-status] [9440] Trigger "logsEntry" has been found, beginning invocation!
+[debug] [2020-03-30T06:26:44.477Z] [functions] Beginning execution of "logsEntry"
+[debug] [2020-03-30T06:26:44.477Z] DEBUG: [runtime-status] [9440] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"logsEntry","entryPoint":"logsEntry"}
+[debug] [2020-03-30T06:26:44.477Z] DEBUG: [runtime-status] [9440] Running logsEntry in mode HTTPS
+[debug] [2020-03-30T06:26:44.482Z] DEBUG: [runtime-status] [9440] Attempting to listen to socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\9440
+[debug] [2020-03-30T06:26:44.485Z] DEBUG: [functions] Runtime ready! Sending request!
+[debug] [2020-03-30T06:26:44.511Z] DEBUG: [runtime-status] [9440] Ephemeral server handling POST request
+[debug] [2020-03-30T06:26:44.526Z] DEBUG: [runtime-status] [9440] Ephemeral server survived.
+[debug] [2020-03-30T06:26:48.165Z] [functions] Finished "logsEntry" in ~3s
+[debug] [2020-03-30T06:26:48.166Z] DEBUG: [worker-logsEntry-051ce51b-b71f-4a7e-9f25-ba1d18e21b71]: IDLE
+[debug] [2020-03-30T06:26:48.166Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-30T06:27:35.454Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\src\logsEntry.ts changed, reloading triggers
+[debug] [2020-03-30T06:27:35.927Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\logsEntry.js changed, reloading triggers
+[debug] [2020-03-30T06:27:36.928Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-30T06:27:36.928Z] DEBUG: [worker-~diagnostic~-930d4631-c141-4fc9-ae77-965403d4839a]: FINISHING
+[debug] [2020-03-30T06:27:36.928Z] DEBUG: [worker-pool] Shutting down IDLE worker (logsEntry)
+[debug] [2020-03-30T06:27:36.929Z] DEBUG: [worker-logsEntry-051ce51b-b71f-4a7e-9f25-ba1d18e21b71]: FINISHING
+[debug] [2020-03-30T06:27:36.941Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-30T06:27:36.941Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-30T06:27:36.941Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-30T06:27:36.941Z] DEBUG: [worker-~diagnostic~-703c6652-8d69-41f5-8b26-4faefea28109]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\13668
+[debug] [2020-03-30T06:27:36.941Z] DEBUG: [worker-~diagnostic~-703c6652-8d69-41f5-8b26-4faefea28109]: BUSY
+[debug] [2020-03-30T06:27:36.947Z] DEBUG: [worker-~diagnostic~-930d4631-c141-4fc9-ae77-965403d4839a]: exited
+[debug] [2020-03-30T06:27:36.947Z] DEBUG: [worker-~diagnostic~-930d4631-c141-4fc9-ae77-965403d4839a]: FINISHED
+[debug] [2020-03-30T06:27:36.948Z] DEBUG: [worker-logsEntry-051ce51b-b71f-4a7e-9f25-ba1d18e21b71]: exited
+[debug] [2020-03-30T06:27:36.948Z] DEBUG: [worker-logsEntry-051ce51b-b71f-4a7e-9f25-ba1d18e21b71]: FINISHED
+[debug] [2020-03-30T06:27:38.089Z] DEBUG: [runtime-status] [13668] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T06:27:38.097Z] DEBUG: [runtime-status] [13668] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T06:27:38.102Z] DEBUG: [runtime-status] [13668] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T06:27:38.105Z] DEBUG: [runtime-status] [13668] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T06:27:38.112Z] DEBUG: [runtime-status] [13668] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T06:27:38.982Z] DEBUG: [worker-~diagnostic~-703c6652-8d69-41f5-8b26-4faefea28109]: IDLE
+[debug] [2020-03-30T06:29:58.420Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\src\logsEntry.ts changed, reloading triggers
+[debug] [2020-03-30T06:29:58.950Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\logsEntry.js changed, reloading triggers
+[debug] [2020-03-30T06:29:59.953Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-30T06:29:59.953Z] DEBUG: [worker-~diagnostic~-703c6652-8d69-41f5-8b26-4faefea28109]: FINISHING
+[debug] [2020-03-30T06:29:59.954Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-30T06:29:59.954Z] DEBUG: [worker-pool] Cleaned up workers for logsEntry: 1 --> 0
+[debug] [2020-03-30T06:29:59.971Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-30T06:29:59.971Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-30T06:29:59.971Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-30T06:29:59.971Z] DEBUG: [worker-~diagnostic~-57903cb1-691d-4f88-9f86-861fa489ed00]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\3964
+[debug] [2020-03-30T06:29:59.971Z] DEBUG: [worker-~diagnostic~-57903cb1-691d-4f88-9f86-861fa489ed00]: BUSY
+[debug] [2020-03-30T06:29:59.975Z] DEBUG: [worker-~diagnostic~-703c6652-8d69-41f5-8b26-4faefea28109]: exited
+[debug] [2020-03-30T06:29:59.975Z] DEBUG: [worker-~diagnostic~-703c6652-8d69-41f5-8b26-4faefea28109]: FINISHED
+[debug] [2020-03-30T06:30:00.844Z] DEBUG: [runtime-status] [3964] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T06:30:00.847Z] DEBUG: [runtime-status] [3964] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T06:30:00.851Z] DEBUG: [runtime-status] [3964] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T06:30:00.854Z] DEBUG: [runtime-status] [3964] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T06:30:00.855Z] DEBUG: [runtime-status] [3964] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T06:30:01.520Z] DEBUG: [worker-~diagnostic~-57903cb1-691d-4f88-9f86-861fa489ed00]: IDLE
+[debug] [2020-03-30T06:30:05.829Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-30T06:30:05.829Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-30T06:30:05.829Z] Accepted request POST /covid-19-paki/us-central1/logsEntry --> logsEntry
+[debug] [2020-03-30T06:30:05.829Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-30T06:30:05.836Z] DEBUG: [worker-pool] addWorker(logsEntry)
+[debug] [2020-03-30T06:30:05.836Z] DEBUG: [worker-pool] Adding worker with key logsEntry, total=1
+[debug] [2020-03-30T06:30:05.836Z] DEBUG: [worker-pool] submitWork(triggerId=logsEntry)
+[debug] [2020-03-30T06:30:05.836Z] DEBUG: [worker-logsEntry-ebf7d199-a64e-4682-8a0d-2c0f1f61c8d4]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\2540
+[debug] [2020-03-30T06:30:05.836Z] DEBUG: [worker-logsEntry-ebf7d199-a64e-4682-8a0d-2c0f1f61c8d4]: BUSY
+[debug] [2020-03-30T06:30:06.551Z] DEBUG: [runtime-status] [2540] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T06:30:06.554Z] DEBUG: [runtime-status] [2540] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T06:30:06.558Z] DEBUG: [runtime-status] [2540] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T06:30:06.560Z] DEBUG: [runtime-status] [2540] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T06:30:06.562Z] DEBUG: [runtime-status] [2540] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T06:30:07.185Z] DEBUG: [runtime-status] [2540] Trigger "logsEntry" has been found, beginning invocation!
+[debug] [2020-03-30T06:30:07.185Z] [functions] Beginning execution of "logsEntry"
+[debug] [2020-03-30T06:30:07.185Z] DEBUG: [runtime-status] [2540] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"logsEntry","entryPoint":"logsEntry"}
+[debug] [2020-03-30T06:30:07.186Z] DEBUG: [runtime-status] [2540] Running logsEntry in mode HTTPS
+[debug] [2020-03-30T06:30:07.190Z] DEBUG: [runtime-status] [2540] Attempting to listen to socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\2540
+[debug] [2020-03-30T06:30:07.194Z] DEBUG: [functions] Runtime ready! Sending request!
+[debug] [2020-03-30T06:30:07.220Z] DEBUG: [runtime-status] [2540] Ephemeral server handling POST request
+[debug] [2020-03-30T06:30:07.235Z] DEBUG: [runtime-status] [2540] Ephemeral server survived.
+[info] >  hoursTolerance:  4
+[debug] [2020-03-30T06:30:09.324Z] [functions] Finished "logsEntry" in ~2s
+[debug] [2020-03-30T06:30:09.325Z] DEBUG: [worker-logsEntry-ebf7d199-a64e-4682-8a0d-2c0f1f61c8d4]: IDLE
+[debug] [2020-03-30T06:30:09.325Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-30T06:32:25.574Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\src\logsEntry.ts changed, reloading triggers
+[debug] [2020-03-30T06:32:26.070Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\logsEntry.js changed, reloading triggers
+[debug] [2020-03-30T06:32:27.071Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-30T06:32:27.071Z] DEBUG: [worker-~diagnostic~-57903cb1-691d-4f88-9f86-861fa489ed00]: FINISHING
+[debug] [2020-03-30T06:32:27.071Z] DEBUG: [worker-pool] Shutting down IDLE worker (logsEntry)
+[debug] [2020-03-30T06:32:27.072Z] DEBUG: [worker-logsEntry-ebf7d199-a64e-4682-8a0d-2c0f1f61c8d4]: FINISHING
+[debug] [2020-03-30T06:32:27.092Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-30T06:32:27.092Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-30T06:32:27.092Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-30T06:32:27.092Z] DEBUG: [worker-~diagnostic~-1d6a80c4-7b34-407e-8baa-226da38dfbc4]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\7552
+[debug] [2020-03-30T06:32:27.092Z] DEBUG: [worker-~diagnostic~-1d6a80c4-7b34-407e-8baa-226da38dfbc4]: BUSY
+[debug] [2020-03-30T06:32:27.093Z] DEBUG: [worker-logsEntry-ebf7d199-a64e-4682-8a0d-2c0f1f61c8d4]: exited
+[debug] [2020-03-30T06:32:27.093Z] DEBUG: [worker-logsEntry-ebf7d199-a64e-4682-8a0d-2c0f1f61c8d4]: FINISHED
+[debug] [2020-03-30T06:32:27.094Z] DEBUG: [worker-~diagnostic~-57903cb1-691d-4f88-9f86-861fa489ed00]: exited
+[debug] [2020-03-30T06:32:27.094Z] DEBUG: [worker-~diagnostic~-57903cb1-691d-4f88-9f86-861fa489ed00]: FINISHED
+[debug] [2020-03-30T06:32:28.253Z] DEBUG: [runtime-status] [7552] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T06:32:28.256Z] DEBUG: [runtime-status] [7552] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T06:32:28.264Z] DEBUG: [runtime-status] [7552] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T06:32:28.268Z] DEBUG: [runtime-status] [7552] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T06:32:28.270Z] DEBUG: [runtime-status] [7552] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T06:32:29.029Z] DEBUG: [worker-~diagnostic~-1d6a80c4-7b34-407e-8baa-226da38dfbc4]: IDLE
+[debug] [2020-03-30T06:32:32.582Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-30T06:32:32.583Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-30T06:32:32.583Z] Accepted request POST /covid-19-paki/us-central1/logsEntry --> logsEntry
+[debug] [2020-03-30T06:32:32.583Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-30T06:32:32.583Z] DEBUG: [worker-pool] Cleaned up workers for logsEntry: 1 --> 0
+[debug] [2020-03-30T06:32:32.598Z] DEBUG: [worker-pool] addWorker(logsEntry)
+[debug] [2020-03-30T06:32:32.599Z] DEBUG: [worker-pool] Adding worker with key logsEntry, total=1
+[debug] [2020-03-30T06:32:32.599Z] DEBUG: [worker-pool] submitWork(triggerId=logsEntry)
+[debug] [2020-03-30T06:32:32.599Z] DEBUG: [worker-logsEntry-058676aa-86af-46be-9e8b-944b25213f16]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\19120
+[debug] [2020-03-30T06:32:32.599Z] DEBUG: [worker-logsEntry-058676aa-86af-46be-9e8b-944b25213f16]: BUSY
+[debug] [2020-03-30T06:32:33.297Z] DEBUG: [runtime-status] [19120] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T06:32:33.300Z] DEBUG: [runtime-status] [19120] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T06:32:33.304Z] DEBUG: [runtime-status] [19120] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T06:32:33.307Z] DEBUG: [runtime-status] [19120] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T06:32:33.309Z] DEBUG: [runtime-status] [19120] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T06:32:34.048Z] DEBUG: [runtime-status] [19120] Trigger "logsEntry" has been found, beginning invocation!
+[debug] [2020-03-30T06:32:34.048Z] [functions] Beginning execution of "logsEntry"
+[debug] [2020-03-30T06:32:34.049Z] DEBUG: [runtime-status] [19120] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"logsEntry","entryPoint":"logsEntry"}
+[debug] [2020-03-30T06:32:34.049Z] DEBUG: [runtime-status] [19120] Running logsEntry in mode HTTPS
+[debug] [2020-03-30T06:32:34.055Z] DEBUG: [runtime-status] [19120] Attempting to listen to socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\19120
+[debug] [2020-03-30T06:32:34.059Z] DEBUG: [functions] Runtime ready! Sending request!
+[debug] [2020-03-30T06:32:34.091Z] DEBUG: [runtime-status] [19120] Ephemeral server handling POST request
+[debug] [2020-03-30T06:32:34.109Z] DEBUG: [runtime-status] [19120] Ephemeral server survived.
+[debug] [2020-03-30T06:32:36.703Z] [functions] Finished "logsEntry" in ~2s
+[debug] [2020-03-30T06:32:36.703Z] DEBUG: [worker-logsEntry-058676aa-86af-46be-9e8b-944b25213f16]: IDLE
+[debug] [2020-03-30T06:32:36.703Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-30T06:37:02.569Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\src\logsEntry.ts changed, reloading triggers
+[debug] [2020-03-30T06:37:03.123Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\logsEntry.js changed, reloading triggers
+[debug] [2020-03-30T06:37:03.125Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\index.js changed, reloading triggers
+[debug] [2020-03-30T06:37:04.127Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-30T06:37:04.128Z] DEBUG: [worker-~diagnostic~-1d6a80c4-7b34-407e-8baa-226da38dfbc4]: FINISHING
+[debug] [2020-03-30T06:37:04.128Z] DEBUG: [worker-pool] Shutting down IDLE worker (logsEntry)
+[debug] [2020-03-30T06:37:04.130Z] DEBUG: [worker-logsEntry-058676aa-86af-46be-9e8b-944b25213f16]: FINISHING
+[debug] [2020-03-30T06:37:04.170Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-30T06:37:04.170Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-30T06:37:04.170Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-30T06:37:04.170Z] DEBUG: [worker-~diagnostic~-fa0362ed-b4cc-4d47-8908-1b15c967163c]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\6504
+[debug] [2020-03-30T06:37:04.170Z] DEBUG: [worker-~diagnostic~-fa0362ed-b4cc-4d47-8908-1b15c967163c]: BUSY
+[debug] [2020-03-30T06:37:04.171Z] DEBUG: [worker-logsEntry-058676aa-86af-46be-9e8b-944b25213f16]: exited
+[debug] [2020-03-30T06:37:04.171Z] DEBUG: [worker-logsEntry-058676aa-86af-46be-9e8b-944b25213f16]: FINISHED
+[debug] [2020-03-30T06:37:04.171Z] DEBUG: [worker-~diagnostic~-1d6a80c4-7b34-407e-8baa-226da38dfbc4]: exited
+[debug] [2020-03-30T06:37:04.171Z] DEBUG: [worker-~diagnostic~-1d6a80c4-7b34-407e-8baa-226da38dfbc4]: FINISHED
+[debug] [2020-03-30T06:37:05.463Z] DEBUG: [runtime-status] [6504] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T06:37:05.467Z] DEBUG: [runtime-status] [6504] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T06:37:05.472Z] DEBUG: [runtime-status] [6504] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T06:37:05.474Z] DEBUG: [runtime-status] [6504] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T06:37:05.476Z] DEBUG: [runtime-status] [6504] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T06:37:06.108Z] DEBUG: [worker-~diagnostic~-fa0362ed-b4cc-4d47-8908-1b15c967163c]: IDLE
+[debug] [2020-03-30T06:37:22.319Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-30T06:37:22.320Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-30T06:37:22.320Z] Accepted request POST /covid-19-paki/us-central1/logsEntry --> logsEntry
+[debug] [2020-03-30T06:37:22.320Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-30T06:37:22.321Z] DEBUG: [worker-pool] Cleaned up workers for logsEntry: 1 --> 0
+[debug] [2020-03-30T06:37:22.335Z] DEBUG: [worker-pool] addWorker(logsEntry)
+[debug] [2020-03-30T06:37:22.336Z] DEBUG: [worker-pool] Adding worker with key logsEntry, total=1
+[debug] [2020-03-30T06:37:22.336Z] DEBUG: [worker-pool] submitWork(triggerId=logsEntry)
+[debug] [2020-03-30T06:37:22.336Z] DEBUG: [worker-logsEntry-2335e9cb-da8f-49f0-91b3-ed7c6d4e2151]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\10664
+[debug] [2020-03-30T06:37:22.336Z] DEBUG: [worker-logsEntry-2335e9cb-da8f-49f0-91b3-ed7c6d4e2151]: BUSY
+[debug] [2020-03-30T06:37:22.954Z] DEBUG: [runtime-status] [10664] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T06:37:22.957Z] DEBUG: [runtime-status] [10664] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T06:37:22.961Z] DEBUG: [runtime-status] [10664] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T06:37:22.963Z] DEBUG: [runtime-status] [10664] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T06:37:22.966Z] DEBUG: [runtime-status] [10664] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T06:37:24.161Z] DEBUG: [runtime-status] [10664] Trigger "logsEntry" has been found, beginning invocation!
+[debug] [2020-03-30T06:37:24.161Z] [functions] Beginning execution of "logsEntry"
+[debug] [2020-03-30T06:37:24.161Z] DEBUG: [runtime-status] [10664] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"logsEntry","entryPoint":"logsEntry"}
+[debug] [2020-03-30T06:37:24.161Z] DEBUG: [runtime-status] [10664] Running logsEntry in mode HTTPS
+[debug] [2020-03-30T06:37:24.170Z] DEBUG: [runtime-status] [10664] Attempting to listen to socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\10664
+[debug] [2020-03-30T06:37:24.174Z] DEBUG: [functions] Runtime ready! Sending request!
+[debug] [2020-03-30T06:37:24.214Z] DEBUG: [runtime-status] [10664] Ephemeral server handling POST request
+[debug] [2020-03-30T06:37:24.235Z] DEBUG: [runtime-status] [10664] Ephemeral server survived.
+[debug] [2020-03-30T06:37:26.773Z] [functions] Finished "logsEntry" in ~2s
+[debug] [2020-03-30T06:37:26.773Z] DEBUG: [worker-logsEntry-2335e9cb-da8f-49f0-91b3-ed7c6d4e2151]: IDLE
+[debug] [2020-03-30T06:37:26.774Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-30T06:42:36.616Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-30T06:42:36.616Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-30T06:42:36.616Z] Accepted request POST /covid-19-paki/us-central1/logsEntry --> logsEntry
+[debug] [2020-03-30T06:42:36.616Z] DEBUG: [worker-pool] submitWork(triggerId=logsEntry)
+[debug] [2020-03-30T06:42:36.616Z] DEBUG: [worker-logsEntry-2335e9cb-da8f-49f0-91b3-ed7c6d4e2151]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\10664
+[debug] [2020-03-30T06:42:36.616Z] DEBUG: [worker-logsEntry-2335e9cb-da8f-49f0-91b3-ed7c6d4e2151]: BUSY
+[debug] [2020-03-30T06:42:36.617Z] DEBUG: [runtime-status] [10664] Trigger "logsEntry" has been found, beginning invocation!
+[debug] [2020-03-30T06:42:36.617Z] [functions] Beginning execution of "logsEntry"
+[debug] [2020-03-30T06:42:36.618Z] DEBUG: [runtime-status] [10664] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"logsEntry","entryPoint":"logsEntry"}
+[debug] [2020-03-30T06:42:36.618Z] DEBUG: [runtime-status] [10664] Running logsEntry in mode HTTPS
+[debug] [2020-03-30T06:42:36.619Z] DEBUG: [runtime-status] [10664] Attempting to listen to socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\10664
+[debug] [2020-03-30T06:42:36.620Z] DEBUG: [functions] Runtime ready! Sending request!
+[debug] [2020-03-30T06:42:36.622Z] DEBUG: [runtime-status] [10664] Ephemeral server handling POST request
+[debug] [2020-03-30T06:42:36.624Z] DEBUG: [runtime-status] [10664] Ephemeral server survived.
+[debug] [2020-03-30T06:42:38.896Z] [functions] Finished "logsEntry" in ~2s
+[debug] [2020-03-30T06:42:38.896Z] DEBUG: [worker-logsEntry-2335e9cb-da8f-49f0-91b3-ed7c6d4e2151]: IDLE
+[debug] [2020-03-30T06:42:38.897Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-30T06:45:14.750Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\src\logsEntry.ts changed, reloading triggers
+[debug] [2020-03-30T06:45:15.516Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\logsEntry.js changed, reloading triggers
+[debug] [2020-03-30T06:45:16.518Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-30T06:45:16.519Z] DEBUG: [worker-~diagnostic~-fa0362ed-b4cc-4d47-8908-1b15c967163c]: FINISHING
+[debug] [2020-03-30T06:45:16.520Z] DEBUG: [worker-pool] Shutting down IDLE worker (logsEntry)
+[debug] [2020-03-30T06:45:16.520Z] DEBUG: [worker-logsEntry-2335e9cb-da8f-49f0-91b3-ed7c6d4e2151]: FINISHING
+[debug] [2020-03-30T06:45:16.558Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-30T06:45:16.558Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-30T06:45:16.558Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-30T06:45:16.558Z] DEBUG: [worker-~diagnostic~-c85aa4cc-8ef2-4f06-8eeb-83b5b7ad28ca]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\1456
+[debug] [2020-03-30T06:45:16.558Z] DEBUG: [worker-~diagnostic~-c85aa4cc-8ef2-4f06-8eeb-83b5b7ad28ca]: BUSY
+[debug] [2020-03-30T06:45:16.559Z] DEBUG: [worker-~diagnostic~-fa0362ed-b4cc-4d47-8908-1b15c967163c]: exited
+[debug] [2020-03-30T06:45:16.559Z] DEBUG: [worker-~diagnostic~-fa0362ed-b4cc-4d47-8908-1b15c967163c]: FINISHED
+[debug] [2020-03-30T06:45:16.574Z] DEBUG: [worker-logsEntry-2335e9cb-da8f-49f0-91b3-ed7c6d4e2151]: exited
+[debug] [2020-03-30T06:45:16.574Z] DEBUG: [worker-logsEntry-2335e9cb-da8f-49f0-91b3-ed7c6d4e2151]: FINISHED
+[debug] [2020-03-30T06:45:18.378Z] DEBUG: [runtime-status] [1456] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T06:45:18.385Z] DEBUG: [runtime-status] [1456] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T06:45:18.391Z] DEBUG: [runtime-status] [1456] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T06:45:18.395Z] DEBUG: [runtime-status] [1456] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T06:45:18.400Z] DEBUG: [runtime-status] [1456] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T06:45:19.046Z] DEBUG: [worker-~diagnostic~-c85aa4cc-8ef2-4f06-8eeb-83b5b7ad28ca]: IDLE
+[debug] [2020-03-30T06:45:24.529Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-30T06:45:24.530Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-30T06:45:24.530Z] Accepted request POST /covid-19-paki/us-central1/logsEntry --> logsEntry
+[debug] [2020-03-30T06:45:24.531Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-30T06:45:24.531Z] DEBUG: [worker-pool] Cleaned up workers for logsEntry: 1 --> 0
+[debug] [2020-03-30T06:45:24.544Z] DEBUG: [worker-pool] addWorker(logsEntry)
+[debug] [2020-03-30T06:45:24.545Z] DEBUG: [worker-pool] Adding worker with key logsEntry, total=1
+[debug] [2020-03-30T06:45:24.545Z] DEBUG: [worker-pool] submitWork(triggerId=logsEntry)
+[debug] [2020-03-30T06:45:24.545Z] DEBUG: [worker-logsEntry-51f641d0-0d2c-42bf-9bcb-93588a7c289e]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\14032
+[debug] [2020-03-30T06:45:24.545Z] DEBUG: [worker-logsEntry-51f641d0-0d2c-42bf-9bcb-93588a7c289e]: BUSY
+[debug] [2020-03-30T06:45:25.137Z] DEBUG: [runtime-status] [14032] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T06:45:25.140Z] DEBUG: [runtime-status] [14032] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T06:45:25.144Z] DEBUG: [runtime-status] [14032] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T06:45:25.146Z] DEBUG: [runtime-status] [14032] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T06:45:25.149Z] DEBUG: [runtime-status] [14032] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T06:45:25.872Z] DEBUG: [runtime-status] [14032] Trigger "logsEntry" has been found, beginning invocation!
+[debug] [2020-03-30T06:45:25.872Z] [functions] Beginning execution of "logsEntry"
+[debug] [2020-03-30T06:45:25.872Z] DEBUG: [runtime-status] [14032] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"logsEntry","entryPoint":"logsEntry"}
+[debug] [2020-03-30T06:45:25.872Z] DEBUG: [runtime-status] [14032] Running logsEntry in mode HTTPS
+[debug] [2020-03-30T06:45:25.878Z] DEBUG: [runtime-status] [14032] Attempting to listen to socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\14032
+[debug] [2020-03-30T06:45:25.883Z] DEBUG: [functions] Runtime ready! Sending request!
+[debug] [2020-03-30T06:45:25.917Z] DEBUG: [runtime-status] [14032] Ephemeral server handling POST request
+[debug] [2020-03-30T06:45:25.935Z] DEBUG: [runtime-status] [14032] Ephemeral server survived.
+[debug] [2020-03-30T06:45:28.199Z] [functions] Finished "logsEntry" in ~2s
+[debug] [2020-03-30T06:45:28.200Z] DEBUG: [worker-logsEntry-51f641d0-0d2c-42bf-9bcb-93588a7c289e]: IDLE
+[debug] [2020-03-30T06:45:28.200Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-30T06:55:05.563Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\src\logsEntry.ts changed, reloading triggers
+[debug] [2020-03-30T06:55:06.203Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\logsEntry.js changed, reloading triggers
+[debug] [2020-03-30T06:55:07.206Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-30T06:55:07.209Z] DEBUG: [worker-~diagnostic~-c85aa4cc-8ef2-4f06-8eeb-83b5b7ad28ca]: FINISHING
+[debug] [2020-03-30T06:55:07.209Z] DEBUG: [worker-pool] Shutting down IDLE worker (logsEntry)
+[debug] [2020-03-30T06:55:07.210Z] DEBUG: [worker-logsEntry-51f641d0-0d2c-42bf-9bcb-93588a7c289e]: FINISHING
+[debug] [2020-03-30T06:55:07.232Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-30T06:55:07.232Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-30T06:55:07.232Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-30T06:55:07.232Z] DEBUG: [worker-~diagnostic~-c7c9ea78-cb5b-45e1-919d-b94f0660e4f6]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\11168
+[debug] [2020-03-30T06:55:07.232Z] DEBUG: [worker-~diagnostic~-c7c9ea78-cb5b-45e1-919d-b94f0660e4f6]: BUSY
+[debug] [2020-03-30T06:55:07.236Z] DEBUG: [worker-logsEntry-51f641d0-0d2c-42bf-9bcb-93588a7c289e]: exited
+[debug] [2020-03-30T06:55:07.239Z] DEBUG: [worker-logsEntry-51f641d0-0d2c-42bf-9bcb-93588a7c289e]: FINISHED
+[debug] [2020-03-30T06:55:07.241Z] DEBUG: [worker-~diagnostic~-c85aa4cc-8ef2-4f06-8eeb-83b5b7ad28ca]: exited
+[debug] [2020-03-30T06:55:07.241Z] DEBUG: [worker-~diagnostic~-c85aa4cc-8ef2-4f06-8eeb-83b5b7ad28ca]: FINISHED
+[debug] [2020-03-30T06:55:08.118Z] DEBUG: [runtime-status] [11168] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T06:55:08.122Z] DEBUG: [runtime-status] [11168] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T06:55:08.128Z] DEBUG: [runtime-status] [11168] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T06:55:08.131Z] DEBUG: [runtime-status] [11168] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T06:55:08.133Z] DEBUG: [runtime-status] [11168] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T06:55:08.938Z] DEBUG: [worker-~diagnostic~-c7c9ea78-cb5b-45e1-919d-b94f0660e4f6]: IDLE
+[debug] [2020-03-30T06:55:26.778Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-30T06:55:26.778Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-30T06:55:26.778Z] Accepted request POST /covid-19-paki/us-central1/logsEntry --> logsEntry
+[debug] [2020-03-30T06:55:26.778Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-30T06:55:26.778Z] DEBUG: [worker-pool] Cleaned up workers for logsEntry: 1 --> 0
+[debug] [2020-03-30T06:55:26.787Z] DEBUG: [worker-pool] addWorker(logsEntry)
+[debug] [2020-03-30T06:55:26.787Z] DEBUG: [worker-pool] Adding worker with key logsEntry, total=1
+[debug] [2020-03-30T06:55:26.787Z] DEBUG: [worker-pool] submitWork(triggerId=logsEntry)
+[debug] [2020-03-30T06:55:26.787Z] DEBUG: [worker-logsEntry-69243092-2854-40e5-9ab1-fa01a77a2524]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\6868
+[debug] [2020-03-30T06:55:26.787Z] DEBUG: [worker-logsEntry-69243092-2854-40e5-9ab1-fa01a77a2524]: BUSY
+[debug] [2020-03-30T06:55:27.416Z] DEBUG: [runtime-status] [6868] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T06:55:27.418Z] DEBUG: [runtime-status] [6868] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T06:55:27.423Z] DEBUG: [runtime-status] [6868] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T06:55:27.425Z] DEBUG: [runtime-status] [6868] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T06:55:27.427Z] DEBUG: [runtime-status] [6868] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T06:55:28.047Z] DEBUG: [runtime-status] [6868] Trigger "logsEntry" has been found, beginning invocation!
+[debug] [2020-03-30T06:55:28.047Z] [functions] Beginning execution of "logsEntry"
+[debug] [2020-03-30T06:55:28.048Z] DEBUG: [runtime-status] [6868] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"logsEntry","entryPoint":"logsEntry"}
+[debug] [2020-03-30T06:55:28.048Z] DEBUG: [runtime-status] [6868] Running logsEntry in mode HTTPS
+[debug] [2020-03-30T06:55:28.053Z] DEBUG: [runtime-status] [6868] Attempting to listen to socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\6868
+[debug] [2020-03-30T06:55:28.062Z] DEBUG: [functions] Runtime ready! Sending request!
+[debug] [2020-03-30T06:55:28.088Z] DEBUG: [runtime-status] [6868] Ephemeral server handling POST request
+[debug] [2020-03-30T06:55:28.106Z] DEBUG: [runtime-status] [6868] Ephemeral server survived.
+[info] >  hi
+[info] >  { logs:
+[info] >     [ { lat: 24.857164886498584,
+[info] >         lng: 67.00135332967594,
+[info] >         alt: -11.331994931378286,
+[info] >         timestamp: 1585540528096 } ],
+[info] >    timeRange: { min: 1585526400000, max: 1585540800000 },
+[info] >    id: '9jQnbgBFLullyYEyq3sD' }
+[debug] [2020-03-30T06:55:29.964Z] [functions] Finished "logsEntry" in ~1s
+[debug] [2020-03-30T06:55:29.964Z] DEBUG: [worker-logsEntry-69243092-2854-40e5-9ab1-fa01a77a2524]: IDLE
+[debug] [2020-03-30T06:55:29.964Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-30T07:07:12.267Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\src\logsEntry.ts changed, reloading triggers
+[debug] [2020-03-30T07:07:12.896Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\logsEntry.js changed, reloading triggers
+[debug] [2020-03-30T07:07:13.898Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-30T07:07:13.898Z] DEBUG: [worker-~diagnostic~-c7c9ea78-cb5b-45e1-919d-b94f0660e4f6]: FINISHING
+[debug] [2020-03-30T07:07:13.899Z] DEBUG: [worker-pool] Shutting down IDLE worker (logsEntry)
+[debug] [2020-03-30T07:07:13.899Z] DEBUG: [worker-logsEntry-69243092-2854-40e5-9ab1-fa01a77a2524]: FINISHING
+[debug] [2020-03-30T07:07:13.931Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-30T07:07:13.931Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-30T07:07:13.931Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-30T07:07:13.932Z] DEBUG: [worker-~diagnostic~-90ec379c-0931-4b43-a34c-14ad958f54fb]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\11480
+[debug] [2020-03-30T07:07:13.932Z] DEBUG: [worker-~diagnostic~-90ec379c-0931-4b43-a34c-14ad958f54fb]: BUSY
+[debug] [2020-03-30T07:07:13.943Z] DEBUG: [worker-~diagnostic~-c7c9ea78-cb5b-45e1-919d-b94f0660e4f6]: exited
+[debug] [2020-03-30T07:07:13.943Z] DEBUG: [worker-~diagnostic~-c7c9ea78-cb5b-45e1-919d-b94f0660e4f6]: FINISHED
+[debug] [2020-03-30T07:07:13.945Z] DEBUG: [worker-logsEntry-69243092-2854-40e5-9ab1-fa01a77a2524]: exited
+[debug] [2020-03-30T07:07:13.946Z] DEBUG: [worker-logsEntry-69243092-2854-40e5-9ab1-fa01a77a2524]: FINISHED
+[debug] [2020-03-30T07:07:15.429Z] DEBUG: [runtime-status] [11480] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T07:07:15.432Z] DEBUG: [runtime-status] [11480] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T07:07:15.436Z] DEBUG: [runtime-status] [11480] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T07:07:15.439Z] DEBUG: [runtime-status] [11480] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T07:07:15.441Z] DEBUG: [runtime-status] [11480] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T07:07:16.098Z] DEBUG: [worker-~diagnostic~-90ec379c-0931-4b43-a34c-14ad958f54fb]: IDLE
+[debug] [2020-03-30T07:07:51.817Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-30T07:07:51.817Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-30T07:07:51.817Z] Accepted request POST /covid-19-paki/us-central1/logsEntry --> logsEntry
+[debug] [2020-03-30T07:07:51.817Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-30T07:07:51.817Z] DEBUG: [worker-pool] Cleaned up workers for logsEntry: 1 --> 0
+[debug] [2020-03-30T07:07:51.830Z] DEBUG: [worker-pool] addWorker(logsEntry)
+[debug] [2020-03-30T07:07:51.830Z] DEBUG: [worker-pool] Adding worker with key logsEntry, total=1
+[debug] [2020-03-30T07:07:51.830Z] DEBUG: [worker-pool] submitWork(triggerId=logsEntry)
+[debug] [2020-03-30T07:07:51.830Z] DEBUG: [worker-logsEntry-0d30e78d-c234-4644-9113-819c1e167667]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\16460
+[debug] [2020-03-30T07:07:51.830Z] DEBUG: [worker-logsEntry-0d30e78d-c234-4644-9113-819c1e167667]: BUSY
+[debug] [2020-03-30T07:07:52.456Z] DEBUG: [runtime-status] [16460] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T07:07:52.462Z] DEBUG: [runtime-status] [16460] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T07:07:52.467Z] DEBUG: [runtime-status] [16460] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T07:07:52.470Z] DEBUG: [runtime-status] [16460] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T07:07:52.473Z] DEBUG: [runtime-status] [16460] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T07:07:53.298Z] DEBUG: [runtime-status] [16460] Trigger "logsEntry" has been found, beginning invocation!
+[debug] [2020-03-30T07:07:53.298Z] [functions] Beginning execution of "logsEntry"
+[debug] [2020-03-30T07:07:53.298Z] DEBUG: [runtime-status] [16460] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"logsEntry","entryPoint":"logsEntry"}
+[debug] [2020-03-30T07:07:53.298Z] DEBUG: [runtime-status] [16460] Running logsEntry in mode HTTPS
+[debug] [2020-03-30T07:07:53.311Z] DEBUG: [runtime-status] [16460] Attempting to listen to socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\16460
+[debug] [2020-03-30T07:07:53.316Z] DEBUG: [functions] Runtime ready! Sending request!
+[debug] [2020-03-30T07:07:53.348Z] DEBUG: [runtime-status] [16460] Ephemeral server handling POST request
+[debug] [2020-03-30T07:07:53.364Z] DEBUG: [runtime-status] [16460] Ephemeral server survived.
+[info] >  hi
+[info] >  { logs:
+[info] >     [ { lat: 24.852242557611508,
+[info] >         lng: 66.99329376010179,
+[info] >         alt: -11.677891520264916,
+[info] >         timestamp: 1585541273353 } ],
+[info] >    timeRange: { min: 1585540800000, max: 1585555200000 },
+[info] >    id: 'fvJdr9K51kQFwohFKVog' }
+[debug] [2020-03-30T07:07:56.174Z] [functions] Finished "logsEntry" in ~2s
+[debug] [2020-03-30T07:07:56.174Z] DEBUG: [worker-logsEntry-0d30e78d-c234-4644-9113-819c1e167667]: IDLE
+[debug] [2020-03-30T07:07:56.174Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-30T07:10:07.174Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\src\logsEntry.ts changed, reloading triggers
+[debug] [2020-03-30T07:10:07.797Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\logsEntry.js changed, reloading triggers
+[debug] [2020-03-30T07:10:08.798Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-30T07:10:08.798Z] DEBUG: [worker-~diagnostic~-90ec379c-0931-4b43-a34c-14ad958f54fb]: FINISHING
+[debug] [2020-03-30T07:10:08.799Z] DEBUG: [worker-pool] Shutting down IDLE worker (logsEntry)
+[debug] [2020-03-30T07:10:08.799Z] DEBUG: [worker-logsEntry-0d30e78d-c234-4644-9113-819c1e167667]: FINISHING
+[debug] [2020-03-30T07:10:08.824Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-30T07:10:08.824Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-30T07:10:08.824Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-30T07:10:08.825Z] DEBUG: [worker-~diagnostic~-feec0d01-8c9d-4b3f-8274-43d0aee3f476]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\19068
+[debug] [2020-03-30T07:10:08.825Z] DEBUG: [worker-~diagnostic~-feec0d01-8c9d-4b3f-8274-43d0aee3f476]: BUSY
+[debug] [2020-03-30T07:10:08.834Z] DEBUG: [worker-~diagnostic~-90ec379c-0931-4b43-a34c-14ad958f54fb]: exited
+[debug] [2020-03-30T07:10:08.835Z] DEBUG: [worker-~diagnostic~-90ec379c-0931-4b43-a34c-14ad958f54fb]: FINISHED
+[debug] [2020-03-30T07:10:08.836Z] DEBUG: [worker-logsEntry-0d30e78d-c234-4644-9113-819c1e167667]: exited
+[debug] [2020-03-30T07:10:08.836Z] DEBUG: [worker-logsEntry-0d30e78d-c234-4644-9113-819c1e167667]: FINISHED
+[debug] [2020-03-30T07:10:11.080Z] DEBUG: [runtime-status] [19068] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T07:10:11.084Z] DEBUG: [runtime-status] [19068] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T07:10:11.094Z] DEBUG: [runtime-status] [19068] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T07:10:11.097Z] DEBUG: [runtime-status] [19068] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T07:10:11.102Z] DEBUG: [runtime-status] [19068] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T07:10:12.260Z] DEBUG: [worker-~diagnostic~-feec0d01-8c9d-4b3f-8274-43d0aee3f476]: IDLE
+[debug] [2020-03-30T07:11:39.241Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\src\utils\helpers.js changed, reloading triggers
+[debug] [2020-03-30T07:11:39.782Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\utils\helpers.js changed, reloading triggers
+[debug] [2020-03-30T07:11:40.784Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-30T07:11:40.787Z] DEBUG: [worker-~diagnostic~-feec0d01-8c9d-4b3f-8274-43d0aee3f476]: FINISHING
+[debug] [2020-03-30T07:11:40.788Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-30T07:11:40.788Z] DEBUG: [worker-pool] Cleaned up workers for logsEntry: 1 --> 0
+[debug] [2020-03-30T07:11:40.806Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-30T07:11:40.806Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-30T07:11:40.806Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-30T07:11:40.807Z] DEBUG: [worker-~diagnostic~-fbf83911-5741-4918-bda7-d3d43942a0cb]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\6016
+[debug] [2020-03-30T07:11:40.807Z] DEBUG: [worker-~diagnostic~-fbf83911-5741-4918-bda7-d3d43942a0cb]: BUSY
+[debug] [2020-03-30T07:11:40.831Z] DEBUG: [worker-~diagnostic~-feec0d01-8c9d-4b3f-8274-43d0aee3f476]: exited
+[debug] [2020-03-30T07:11:40.831Z] DEBUG: [worker-~diagnostic~-feec0d01-8c9d-4b3f-8274-43d0aee3f476]: FINISHED
+[debug] [2020-03-30T07:11:42.091Z] DEBUG: [runtime-status] [6016] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T07:11:42.095Z] DEBUG: [runtime-status] [6016] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T07:11:42.100Z] DEBUG: [runtime-status] [6016] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T07:11:42.102Z] DEBUG: [runtime-status] [6016] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T07:11:42.137Z] DEBUG: [runtime-status] [6016] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T07:11:42.733Z] DEBUG: [worker-~diagnostic~-fbf83911-5741-4918-bda7-d3d43942a0cb]: IDLE
+[debug] [2020-03-30T07:12:02.116Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\src\logsEntry.ts changed, reloading triggers
+[debug] [2020-03-30T07:12:02.675Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\logsEntry.js changed, reloading triggers
+[debug] [2020-03-30T07:12:03.676Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-30T07:12:03.677Z] DEBUG: [worker-~diagnostic~-fbf83911-5741-4918-bda7-d3d43942a0cb]: FINISHING
+[debug] [2020-03-30T07:12:03.677Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-30T07:12:03.687Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-30T07:12:03.687Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-30T07:12:03.687Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-30T07:12:03.687Z] DEBUG: [worker-~diagnostic~-7667c2bc-e556-41a2-a69a-6ba6baf2ac79]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\15540
+[debug] [2020-03-30T07:12:03.687Z] DEBUG: [worker-~diagnostic~-7667c2bc-e556-41a2-a69a-6ba6baf2ac79]: BUSY
+[debug] [2020-03-30T07:12:03.700Z] DEBUG: [worker-~diagnostic~-fbf83911-5741-4918-bda7-d3d43942a0cb]: exited
+[debug] [2020-03-30T07:12:03.701Z] DEBUG: [worker-~diagnostic~-fbf83911-5741-4918-bda7-d3d43942a0cb]: FINISHED
+[debug] [2020-03-30T07:12:04.673Z] DEBUG: [runtime-status] [15540] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T07:12:04.684Z] DEBUG: [runtime-status] [15540] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T07:12:04.700Z] DEBUG: [runtime-status] [15540] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T07:12:04.705Z] DEBUG: [runtime-status] [15540] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T07:12:04.718Z] DEBUG: [runtime-status] [15540] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T07:12:05.740Z] DEBUG: [worker-~diagnostic~-7667c2bc-e556-41a2-a69a-6ba6baf2ac79]: IDLE
+[debug] [2020-03-30T07:12:43.466Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\src\utils\helpers.js changed, reloading triggers
+[debug] [2020-03-30T07:12:44.245Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\utils\helpers.js changed, reloading triggers
+[debug] [2020-03-30T07:12:44.263Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\logsEntry.js changed, reloading triggers
+[debug] [2020-03-30T07:12:44.282Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\aggregateHashMap.js changed, reloading triggers
+[debug] [2020-03-30T07:12:45.282Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-30T07:12:45.282Z] DEBUG: [worker-~diagnostic~-7667c2bc-e556-41a2-a69a-6ba6baf2ac79]: FINISHING
+[debug] [2020-03-30T07:12:45.283Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-30T07:12:45.303Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-30T07:12:45.303Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-30T07:12:45.303Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-30T07:12:45.303Z] DEBUG: [worker-~diagnostic~-4572497f-0ea1-446b-85ff-16a2eb8b40ac]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\10764
+[debug] [2020-03-30T07:12:45.303Z] DEBUG: [worker-~diagnostic~-4572497f-0ea1-446b-85ff-16a2eb8b40ac]: BUSY
+[debug] [2020-03-30T07:12:45.304Z] DEBUG: [worker-~diagnostic~-7667c2bc-e556-41a2-a69a-6ba6baf2ac79]: exited
+[debug] [2020-03-30T07:12:45.304Z] DEBUG: [worker-~diagnostic~-7667c2bc-e556-41a2-a69a-6ba6baf2ac79]: FINISHED
+[debug] [2020-03-30T07:12:46.141Z] DEBUG: [runtime-status] [10764] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T07:12:46.145Z] DEBUG: [runtime-status] [10764] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T07:12:46.149Z] DEBUG: [runtime-status] [10764] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T07:12:46.151Z] DEBUG: [runtime-status] [10764] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T07:12:46.153Z] DEBUG: [runtime-status] [10764] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T07:12:46.859Z] DEBUG: [worker-~diagnostic~-4572497f-0ea1-446b-85ff-16a2eb8b40ac]: IDLE
+[debug] [2020-03-30T07:13:17.028Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\src\logsEntry.ts changed, reloading triggers
+[debug] [2020-03-30T07:13:17.671Z] DEBUG: File C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\lib\logsEntry.js changed, reloading triggers
+[debug] [2020-03-30T07:13:18.672Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-30T07:13:18.672Z] DEBUG: [worker-~diagnostic~-4572497f-0ea1-446b-85ff-16a2eb8b40ac]: FINISHING
+[debug] [2020-03-30T07:13:18.673Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-30T07:13:18.702Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-30T07:13:18.702Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-30T07:13:18.702Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-30T07:13:18.702Z] DEBUG: [worker-~diagnostic~-3cc34d0b-b23e-429b-a74d-2d062b4f2589]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\16104
+[debug] [2020-03-30T07:13:18.702Z] DEBUG: [worker-~diagnostic~-3cc34d0b-b23e-429b-a74d-2d062b4f2589]: BUSY
+[debug] [2020-03-30T07:13:18.716Z] DEBUG: [worker-~diagnostic~-4572497f-0ea1-446b-85ff-16a2eb8b40ac]: exited
+[debug] [2020-03-30T07:13:18.716Z] DEBUG: [worker-~diagnostic~-4572497f-0ea1-446b-85ff-16a2eb8b40ac]: FINISHED
+[debug] [2020-03-30T07:13:19.765Z] DEBUG: [runtime-status] [16104] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T07:13:19.769Z] DEBUG: [runtime-status] [16104] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T07:13:19.774Z] DEBUG: [runtime-status] [16104] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T07:13:19.777Z] DEBUG: [runtime-status] [16104] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T07:13:19.781Z] DEBUG: [runtime-status] [16104] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T07:13:20.519Z] DEBUG: [worker-~diagnostic~-3cc34d0b-b23e-429b-a74d-2d062b4f2589]: IDLE
+[debug] [2020-03-30T07:13:55.576Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-30T07:13:55.576Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-30T07:13:55.576Z] Accepted request POST /covid-19-paki/us-central1/logsEntry --> logsEntry
+[debug] [2020-03-30T07:13:55.576Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-30T07:13:55.585Z] DEBUG: [worker-pool] addWorker(logsEntry)
+[debug] [2020-03-30T07:13:55.585Z] DEBUG: [worker-pool] Adding worker with key logsEntry, total=1
+[debug] [2020-03-30T07:13:55.585Z] DEBUG: [worker-pool] submitWork(triggerId=logsEntry)
+[debug] [2020-03-30T07:13:55.585Z] DEBUG: [worker-logsEntry-ac1ef418-8e30-47a1-a07c-b06d936a3f0e]: Assigning socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\15124
+[debug] [2020-03-30T07:13:55.585Z] DEBUG: [worker-logsEntry-ac1ef418-8e30-47a1-a07c-b06d936a3f0e]: BUSY
+[debug] [2020-03-30T07:13:56.167Z] DEBUG: [runtime-status] [15124] Functions runtime initialized. {"cwd":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions","node_version":"10.15.3"}
+[debug] [2020-03-30T07:13:56.170Z] DEBUG: [runtime-status] [15124] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-30T07:13:56.174Z] DEBUG: [runtime-status] [15124] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-30T07:13:56.176Z] DEBUG: [runtime-status] [15124] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\covid-19-paki-6eba73e0b754.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-30T07:13:56.178Z] DEBUG: [runtime-status] [15124] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\NEW VOLUME D\\Codes And Programs\\React Native\\CovidsNearMe\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-30T07:13:56.921Z] DEBUG: [runtime-status] [15124] Trigger "logsEntry" has been found, beginning invocation!
+[debug] [2020-03-30T07:13:56.921Z] [functions] Beginning execution of "logsEntry"
+[debug] [2020-03-30T07:13:56.922Z] DEBUG: [runtime-status] [15124] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"logsEntry","entryPoint":"logsEntry"}
+[debug] [2020-03-30T07:13:56.922Z] DEBUG: [runtime-status] [15124] Running logsEntry in mode HTTPS
+[debug] [2020-03-30T07:13:56.929Z] DEBUG: [runtime-status] [15124] Attempting to listen to socketPath: \\?\pipe\C:\NEW VOLUME D\Codes And Programs\React Native\CovidsNearMe\functions\15124
+[debug] [2020-03-30T07:13:56.933Z] DEBUG: [functions] Runtime ready! Sending request!
+[debug] [2020-03-30T07:13:56.957Z] DEBUG: [runtime-status] [15124] Ephemeral server handling POST request
+[debug] [2020-03-30T07:13:56.971Z] DEBUG: [runtime-status] [15124] Ephemeral server survived.
+[debug] [2020-03-30T07:13:59.915Z] [functions] Finished "logsEntry" in ~2s
+[debug] [2020-03-30T07:13:59.916Z] DEBUG: [worker-logsEntry-ac1ef418-8e30-47a1-a07c-b06d936a3f0e]: IDLE
+[debug] [2020-03-30T07:13:59.916Z] [work-queue] {"queueLength":0,"workRunningCount":0}

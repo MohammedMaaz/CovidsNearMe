@@ -1,6 +1,13 @@
 import Geo from './geolocation';
-import {random_number, random_int, snapMillisToTrailing} from './utils';
-import {db} from './firebase';
+import {
+  random_number,
+  random_int,
+  snapMillisToTrailing,
+  hoursToMillis,
+} from './utils';
+import {db, functions} from './firebase';
+import {logsToHasMap} from '../aggregateHashMap';
+import Firestore from '../firestore';
 
 export const generateRandLogs = ({
   cLat,
@@ -31,7 +38,7 @@ export const generateRandLogs = ({
   return logs;
 };
 
-const genrateRandLogDocs = ({cLat, cLng, meters, days, intervalSecs}) => {
+const generateRandLogDocs = ({cLat, cLng, meters, days, intervalSecs}) => {
   const [minLat, minLng, maxLat, maxLng] = Geo.get_circle_box(
     cLat,
     cLng,
@@ -64,41 +71,7 @@ const genrateRandLogDocs = ({cLat, cLng, meters, days, intervalSecs}) => {
   return logDocs;
 };
 
-export const logsToHasMap = (
-  logDocs,
-  radiusMeters,
-  millisTolerance,
-  precesion,
-  error,
-) => {
-  const hashMap = {};
-  for (let doc of logDocs) {
-    for (let log of doc.logs) {
-      const {lat, lng, timestamp} = log;
-      const hashes = Geo.get_circle_hashes(
-        lat,
-        lng,
-        radiusMeters,
-        precesion,
-        error,
-      );
-      for (let hash of hashes) {
-        const t1 = snapMillisToTrailing(timestamp, millisTolerance);
-        if (hashMap[hash]) hashMap[hash].push(...[t1, t1 + millisTolerance]);
-        else hashMap[hash] = [t1, t1 + millisTolerance];
-      }
-    }
-  }
-
-  //flatten the hours Array
-  for (let hash in hashMap) {
-    hashMap[hash] = [...new Set(hashMap[hash])];
-  }
-
-  return hashMap;
-};
-
-const calculateMeanHoursArray = hashMap => {
+const calculateMeanHoursArray = (hashMap) => {
   let sum = 0;
   for (let hash in hashMap) {
     sum += hashMap[hash].length;
@@ -110,75 +83,117 @@ const test = ({
   cLat = 24.860734299999997,
   cLng = 67.0011364,
   testRadius = 80000,
+  minAlt = -25,
+  maxAlt = 25,
   testDays = 14,
   testIntervalSecs = 20,
   pointRadius = 5,
   hashPrecesion = 5,
-  hoursTolerance = 4,
+  hashTimeSnapHours = 4,
   error = 10,
 }) => {
-  const logDocs = genrateRandLogDocs({
+  const logs = generateRandLogs({
     cLat,
     cLng,
-    meters: testRadius,
-    days: testDays,
+    radius: testRadius,
+    minAlt,
+    maxAlt,
+    hour: testDays * 24,
     intervalSecs: testIntervalSecs,
   });
-  const hashMap = aggregateLogsToHasMap(
-    logDocs,
-    pointRadius,
-    hoursTolerance,
-    hashPrecesion,
+  const hashMap = logsToHasMap({
+    logs,
+    nearDistanceThreshold: pointRadius,
+    hashTimeSnapMillis: hoursToMillis(hashTimeSnapHours),
+    precesion: hashPrecesion,
     error,
-  );
+  });
+
   console.log('Hashes:', Object.keys(hashMap).length);
   console.log('Mean Hour Array Size:', calculateMeanHoursArray(hashMap));
 };
 
-export const getLogs = async ({minMillis, maxMillis, snapMillis, uid}) => {
+///////////////////////////////////////////////////////////////////
+// ************************************************************* //
+// ************************* HELPERS *************************** //
+// ************************************************************* //
+///////////////////////////////////////////////////////////////////
+
+export const getLogsForRange = async ({minMillis, maxMillis, uid}) => {
   try {
-    const t1 = snapMillisToTrailing(minMillis, snapMillis);
-    const t2 = snapMillisToTrailing(maxMillis, snapMillis);
+    let docs = [];
+    const ref = db.locationLogs(uid);
 
-    const docs = await db
-      .locationLogs(uid)
-      .where('timeRange.min', '>=', new Date(t1))
-      .where('timeRange.min', '<=', new Date(t2))
-      .get();
+    const [snap, lastDoc] = await Promise.all([
+      ref
+        .where('timeRange.max', '>=', minMillis)
+        .where('timeRange.max', '<=', maxMillis)
+        .orderBy('timeRange.max')
+        .get(),
+      ref
+        .where('timeRange.max', '>', maxMillis)
+        .orderBy('timeRange.max')
+        .limit(1)
+        .get(),
+    ]);
 
-    const logs = [];
-    docs.forEach(doc => logs.push({id: doc.id, ...doc.data()}));
+    if (!snap.empty) docs = snap.docs;
+    if (!lastDoc.empty && maxMillis >= lastDoc.docs[0].data().timeRange.min)
+      docs.push(lastDoc.docs[0]);
 
-    return logs;
+    const allLogs = [];
+    docs.forEach((doc) => {
+      const logs = doc.data().logs;
+      for (let log of logs) {
+        if (log.timestamp > maxMillis) break;
+        else if (log.timestamp >= minMillis) allLogs.push(log);
+      }
+    });
+
+    return allLogs;
   } catch (error) {
     throw error;
   }
 };
 
 export const changeTaskStatus = (uid, taskId, newStatus) =>
-  db
-    .userTasks(uid)
-    .doc(taskId)
-    .set(
-      {
-        status: newStatus,
-        updatedAt: new Date(),
-      },
-      {merge: true},
-    );
+  db.userTasks(uid).doc(taskId).set(
+    {
+      status: newStatus,
+      updatedAt: new Date(),
+    },
+    {merge: true},
+  );
 
-export const getUnfilledLog = async (t1, t2, uid) => {
-  try {
-    const docs = await db
-      .locationLogs(uid)
-      .where('timeRange.max', '>=', t1)
-      .get();
+export const withTriggerTask = (
+  taskId,
+  task = ({uid, taskId, change, context, global}) => Promise.resolve(),
+) => {
+  return functions.firestore
+    .document(`users/{uid}/tasks/${taskId}`)
+    .onWrite(async (change, context) => {
+      try {
+        const prevStatus = change.before.data().status;
+        const newStatus = change.after.data().status;
 
-    const logs = [];
-    docs.forEach(doc => logs.push({id: doc.id, ...doc.data()}));
+        if (prevStatus === newStatus || newStatus !== 'triggered') return;
+        const uid = context.params.uid;
 
-    return logs.filter(log => log.timeRange.min <= t2)[0];
-  } catch (error) {
-    throw error;
-  }
+        //get global constants and change task status to pending
+        const [global, dummmy] = await Promise.all([
+          Firestore.get(db.global_constants),
+          changeTaskStatus(uid, taskId, 'pending'),
+        ]);
+
+        await task({uid, taskId, change, context, global});
+        await changeTaskStatus(uid, taskId, 'completed');
+      } catch (e) {
+        console.log(`${taskId} ERROR:`, e);
+        try {
+          await changeTaskStatus(context.params.uid, taskId, 'failed');
+        } catch (error) {
+          console.log('changeTaskStatus ERROR:', error);
+        }
+      }
+    });
 };

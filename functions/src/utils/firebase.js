@@ -4,16 +4,11 @@ import * as funcs from 'firebase-functions';
 //db refs
 const _db = admin.firestore();
 const users = _db.collection('users');
-const alerts = uid => users.doc(uid).collection('alerts');
-const locationLogs = uid => users.doc(uid).collection('locationLogs');
-const affectedUsers = uid => users.doc(uid).collection('affectedUsers');
+const alerts = (uid) => users.doc(uid).collection('alerts');
+const locationLogs = (uid) => users.doc(uid).collection('locationLogs');
+const affectedUsers = (uid) => users.doc(uid).collection('affectedUsers');
 const global_constants = _db.collection('config').doc('global_constants');
-const userTasks = uid => users.doc(uid).collection('tasks');
-const aggregatedHashMap = uid =>
-  users
-    .doc(uid)
-    .collection('hashMap')
-    .doc('aggregatedHashMap');
+const userTasks = (uid) => users.doc(uid).collection('tasks');
 
 //exports
 export const db = {
@@ -23,7 +18,6 @@ export const db = {
   affectedUsers,
   global_constants,
   userTasks,
-  aggregatedHashMap,
 };
 
 export const firebase = admin;

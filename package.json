@@ -21,6 +21,7 @@
     "@react-native-firebase/messaging": "^6.2.0",
     "@react-native-firebase/storage": "^6.2.0",
     "dva": "^2.4.1",
+    "fbjs": "^1.0.0",
     "firebase-admin": "^8.10.0",
     "firebase-functions": "^3.5.0",
     "history": "^4.10.1",
@@ -41,7 +42,8 @@
     "react-native-reanimated": "^1.7.1",
     "react-native-router-flux": "^4.0.6",
     "react-native-safe-area-context": "^0.7.3",
-    "react-native-screens": "^2.4.0"
+    "react-native-screens": "^2.4.0",
+    "react-native-vector-icons": "^6.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -55,5 +57,10 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "rnpm": {
+    "assets": [
+      "./src/assets/fonts/"
+    ]
   }
 }
